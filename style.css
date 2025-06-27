@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.game-area {
+    width: 400px; /* Defines the width of the game board */ [2]
+    height: 400px; /* Defines the height of the game board */ [2]
+    background: #111;
+    margin: 20px auto;
+    display: grid; /* Uses CSS Grid for layout */ [2]
+    grid-template-columns: repeat(20, 20px); /* Creates 20 columns, each 20px wide */ [2]
+    grid-template-rows: repeat(20, 20px); /* Creates 20 rows, each 20px high */ [2]
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: lime; /* Sets the color for snake segments */ [2]
+}
+
+.food {
+    background-color: red; /* Sets the color for the food */ [2]
+}
